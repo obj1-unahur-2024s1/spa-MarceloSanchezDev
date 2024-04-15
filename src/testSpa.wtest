@@ -1,0 +1,20 @@
+import example.*
+
+describe "spa atiende a todos"{
+	method initialize(){
+		spa.atenderATodos(bruno,olivia,ramiro)
+	}	
+	test "olivia" {
+		assert.that(olivia.gradoDeConcentracion() > 6) 
+	}
+	test "bruno" {
+		assert.that(bruno.peso() < 55000)
+		assert.that(bruno.felcidiad())
+	}
+	test "ramiro" {
+		assert.that(ramiro.contractura() < 10)
+		assert.notThat(ramiro.pielGrasosa())
+	}
+
+}
+
